@@ -6,6 +6,7 @@ Requirements
    1. VirtualBox (tested with 4.2.10)  (virtualbox.org)
    2. Vagrant (tested with 1.2.2)  (vagrantup.com)
    3. Vagrant Plugins
+   
          vagrant plugin install vagrant-berkshelf  (berkshelf.com)
 
 
