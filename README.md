@@ -41,6 +41,9 @@ NOTE: If you're on OS X with a case-insensitive filesystem, you should create a 
    6. You'll be in the box as the `vagrant` user, but Zenoss development should happen as the `zendev` user. Both are sudoers with `NOPASSWD:ALL`; the default password for `zendev` is `zendev`. `sudo su - zendev` to enter the Zenoss environment.
    7. The source checkouts on your host box are mounted via NFS on the dev box. You can use `git zen` (or just `git`) locally to modify them, or edit them locally.
 
+Upgrade
+-------
+   workon europa && upeuropa
 
 git zen
 -------
@@ -134,3 +137,8 @@ like so.
 
     export VAGRANT_DEFAULT_PROVIDER="vmware_fusion"
 
+Useful bash aliases.
+alias vp="vagrant provision"
+alias vs="vagrant ssh"
+alias vu="vagrant up"
+alias vd="vagrant destroy"
